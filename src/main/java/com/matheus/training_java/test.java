@@ -4,17 +4,15 @@ public class test {
 
     public static void main(String[] args) {
 
-        byte idade = 19;
-        short salario;
+        var idade = 20;
 
-        boolean brasileiro = true;
-
-        String nome ="Matheus";
-
-        double troco = 22.50;
-        float ganhos = 200.00F;
-
-
+        if (idade > 20){
+            System.out.println("maior");
+        } else if (idade == 20) {
+            System.out.println("igual");
+        }else {
+            System.out.println("menor");
+        }
 
     }
 }
