@@ -8,6 +8,5 @@ public class Arrays {
       idades[0] = 1;
 
       String[] iniciais = new String[4];
-      iniciais
     }
 }
