@@ -19,7 +19,7 @@ public class Primitives {
         int number = 2140000000;
         System.out.println(number);
 
-        long bigNumber = 9100000000000000000L;
+        long bigNumber = 9_100_000_000_000_000_000L;
         System.out.println(bigNumber);
 
         double numberDot = 211.200;
