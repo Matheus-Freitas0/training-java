@@ -1,4 +1,4 @@
-package com.matheus.training_java;
+package com.matheus.training_java.standard;
 import java.util.ArrayList;
 
 public class ListsArray {

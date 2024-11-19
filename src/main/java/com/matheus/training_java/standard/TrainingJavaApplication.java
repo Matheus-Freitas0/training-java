@@ -1,4 +1,4 @@
-package com.matheus.training_java;
+package com.matheus.training_java.standard;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

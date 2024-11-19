@@ -1,4 +1,4 @@
-package com.matheus.training_java;
+package com.matheus.training_java.standard;
 
 public class POO {
     String nome;
