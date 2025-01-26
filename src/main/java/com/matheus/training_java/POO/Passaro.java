@@ -6,7 +6,12 @@ public class Passaro extends Animal implements PodeVoar {
         super(nome, idade, raca);
     }
 
+    @Override
+    public void fazerSom() {
+        System.out.println("piu piu piu");
+    }
+
     public void voar() {
-        System.out.println("Passaro esta voando");
+        System.out.println( getNome() + " esta voando");
     }
 }

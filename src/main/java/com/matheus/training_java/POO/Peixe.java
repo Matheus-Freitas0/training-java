@@ -5,6 +5,11 @@ public class Peixe extends Animal implements PodeNadar {
         super(nome, idade, raca);
     }
 
+    @Override
+    public void fazerSom() {
+        System.out.println("blu blu blu");
+    }
+
     public void nadar() {
         System.out.println("Peixe está nadando");
     }

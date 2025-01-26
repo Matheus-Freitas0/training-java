@@ -2,7 +2,7 @@ package com.matheus.training_java.POO;
 
 import lombok.Getter;
 
-public class Animal {
+public abstract class Animal {
 
     @Getter
     private String nome;
@@ -15,9 +15,7 @@ public class Animal {
         this.raca = raca;
     }
 
-    public void fazerSom(){
-        System.out.println(nome + " faz barulho");
-    }
+    public abstract void fazerSom();
 
     public void andar(){
         System.out.println(nome + " esta caminhando");
