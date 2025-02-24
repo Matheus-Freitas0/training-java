@@ -1,14 +1,12 @@
 package com.matheus.training_java.training.stream;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @ToString
+@EqualsAndHashCode
 public class Funcionario {
 
     private Integer id;
