@@ -87,6 +87,29 @@ public class Stream {
                 .sorted(Comparator.comparing(Pedido::getDataPedido).reversed())
                 .toList();
         System.out.println(pedidosPorData);*/
+
+//        var maisBaratoDoPedido = pedidos.stream()
+//                .collect(Collectors.groupingBy(Pedido::getId, Collectors.flatMapping(pedido -> pedido.getProdutos().stream(), Collectors.minBy(Comparator.comparing(Produto::getPreco))))
+//                );
+//        System.out.println(maisBaratoDoPedido);
+
+//        var valorTotalPorStatus = pedidos. stream()
+//                .collect(Collectors.groupingBy(Pedido::getStatus, Collectors.summingInt(pedido -> pedido.getValorTotal().intValue()) ));
+//        System.out.println(valorTotalPorStatus);
+/*
+        var produtoMaisCaroCliente = pedidos.stream()
+                .collect(Collectors.groupingBy(Pedido::getCliente, Collectors.flatMapping(pedido -> pedido.getProdutos().stream(), Collectors.maxBy(Comparator.comparing(Produto::getPreco)))));
+        System.out.println(produtoMaisCaroCliente);*/
+
+//        var totalProdutosVendidos = pedidos.stream()
+//                .flatMap(pedido -> pedido.getProdutos().stream())
+//                .collect(Collectors.groupingBy(Produto::getNome, Collectors.summingInt(pedido -> pedido.getPreco().intValue())));
+//        System.out.println(totalProdutosVendidos);
+
+        var produtosComUmAcimaDe1000 = pedidos.stream()
+                        .filter(pedido -> pedido.getProdutos().stream()
+                        .anyMatch(produto -> produto.getPreco().intValue() > 1000)).toList();
+        System.out.println(produtosComUmAcimaDe1000);
     }
 
 }
